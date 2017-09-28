@@ -7,7 +7,8 @@ def timer():
     return time_current
 def runner():
     x=456434*94434/64+4534354-5645
-    print(x)
+    with open("pcRun.txt","a") as f :#加入骚写硬盘，速度明显下降
+        f.write(str(x)+"\n")
     return  timer()
 
 def while_in_one_second():
