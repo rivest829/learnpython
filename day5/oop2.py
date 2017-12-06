@@ -12,7 +12,6 @@ class Attr(object):
 class Foo(object):
     def __init__(self):
         self.data = {}
-
     def __getitem__(self, key):
         print('__getitem__', key)
         return self.data.get(key)
