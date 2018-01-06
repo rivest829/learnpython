@@ -8,3 +8,4 @@ def printer(list1):
         else:
             print(i)
 printer(list1)
+print(list1[-1])

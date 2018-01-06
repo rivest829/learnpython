@@ -45,5 +45,8 @@ Session=Session_class()
 # alter(Session,Student,'chiang',sname='张三'.encode())
 # for i in Session.query(Student).filter(Student.class_id<3).all():
 #     print(i.sname)
-# for i in Session.query(Student).filter(Student.sname.like('c%'.encode())):
-#     print(i.class_id)
+# print(Session.query(Student).filter(Student.sname.like('张%'.encode())).count())
+# for i in Session.query(Student).group_by(Student.sname).all():
+#     print(i.sid,i.sname,i.gender,i.class_id)
+# from sqlalchemy import func
+# print(Session.query(func.count(Student.sname),Student.sname).group_by(Student.sname).all() )
